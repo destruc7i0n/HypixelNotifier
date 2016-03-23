@@ -1,4 +1,4 @@
-var id = 'SpigotNotifier';
+var id = 'HypixelNotifier';
 
 $(document).ready(function() {
     chrome.storage.local.get('alerts', function(response) {

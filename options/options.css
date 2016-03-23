@@ -37,7 +37,7 @@ body {
     color: #DFDFDF;
     cursor: pointer;
 }
-.header #sno {
+.header #hno {
     color: #F4B159;
     position: absolute;
     top: -2px;
@@ -114,7 +114,7 @@ body {
     border: 0px solid;
     color: #FFFFFF;
     -webkit-appearance: none;
-    background: url('sn_options_circumflex.png') no-repeat right;
+    background: url('hn_options_circumflex.png') no-repeat right;
     background-size: contain;
     background-color: #113952;
     letter-spacing: 1px;

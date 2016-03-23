@@ -10,7 +10,7 @@ var lastAlertId = undefined;
 
 function checkEverything() {
     $.ajax({
-        url: 'https://www.spigotmc.org',
+        url: 'https://www.hypixel.net/forums/',
         success: function(data) {
             data = data.replace(/\"\/\//g, "\"https://");
             checkNotifications(data);
@@ -21,7 +21,7 @@ function checkEverything() {
 	
 function checkNotificationDetails(){
     $.ajax({
-        url: 'https://www.spigotmc.org/account/alerts',
+        url: 'https://www.hypixel.net/account/alerts',
         success: function(data) {
             data = data.replace(/\"\/\//g, "\"https://");
 			checkNotificationsEnchanced(data);
@@ -80,11 +80,11 @@ chrome.notifications.onClicked.addListener(function(notificationid) {
     if (my_notids_alerts.indexOf(notificationid) > -1) {
         my_notids_alerts.pop(notificationid);
         chrome.notifications.clear(notificationid);
-        window.open("https://www.spigotmc.org/account/alerts");
+        window.open("https://www.hypixel.net/account/alerts");
     } else if (my_notids_messages.indexOf(notificationid) > -1) {
         my_notids_messages.pop(notificationid);
         chrome.notifications.clear(notificationid);
-        window.open("https://www.spigotmc.org/conversations/");
+        window.open("https://www.hypixel.net/conversations/");
     }
 });
 
@@ -107,17 +107,6 @@ function checkNotifications(data) {
     chrome.browserAction.setBadgeText({
         text: (total == 0) ? "" : total.toString()
     });
-    /*if (total > 0) {
-        if (alerts > alerts_old) {
-            alerts_old = alerts
-            makeNotification("New Alert(s)", "You've got " + alerts + " new alerts!");
-        }
-
-        if (messages > messages_old) {
-            messages_old = messages;
-            makeNotification("New Message(s)", "You've got " + messages + " unread messages!");
-        }
-    }*/
 }
 
 function checkProfileStats(data) {
