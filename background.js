@@ -144,5 +144,5 @@ chrome.storage.local.get('lastAlert', function(response) {
 setInterval(checkEverything, 15 * 1000);
 setTimeout(checkEverything, 1000); // Don't ask...
 chrome.browserAction.setBadgeBackgroundColor({
-        "color": "#ed8106"
+        "color": "#E2BB60"
     }) // Set badge colour to orange
