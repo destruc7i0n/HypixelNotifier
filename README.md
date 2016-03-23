@@ -1,9 +1,12 @@
-# SpigotNotifier
+# HypixelNotifier
 Google Chrome Extension
 
-Notifies users of their Spigot account's Messages and Notifications,  
+Notifies users of their Hypixel account's Messages and Notifications,  
 Also displays their post count and post rating.
 
-You have to be logged in on https://www.spigotmc.org/ for it to work.
+You have to be logged in on https://www.hypixel.net/ for it to work.
 
-Click [here](https://chrome.google.com/webstore/detail/spigot-notifier/dpkibifcklglomemgflhamcdohfobfpd) for the Chrome Web Store page!
+Click [here](https://test.com) for the Chrome Web Store page!
+
+
+Fork of: [SpigotNotifier](https://github.com/Adriani6/SpigotNotifier) By [Adriani6](https://github.com/Adriani6)
